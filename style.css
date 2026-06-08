@@ -1,0 +1,130 @@
+/* 基礎設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* 換成更柔和亮眼的粉紫漸層 */
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 卡片主體 */
+.profile-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 頭像與標題 */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fda085; /* 呼應背景色 */
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 15px;
+  color: #fe7a7d;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* 簡介與技能 */
+.profile-bio {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.profile-bio p {
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.skills-tags {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.tag {
+  background: #fdf0ed;
+  color: #fda085;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* 為「人間月老」加入特別樣式 */
+.tag.special-tag {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 154, 158, 0.4);
+}
+
+/* 按鈕與社群連結 */
+.btn {
+  background: linear-gradient(135deg, #ed4264 0%, #ffedbc 100%);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(237, 66, 100, 0.3);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.social-links a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.social-links a:hover {
+  color: #ed4264;
+}
